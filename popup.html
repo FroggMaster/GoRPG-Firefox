@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="popup.js" defer></script>
+</head>
+<body>
+	<div class="parent-div animate-fade" id="main-parent">
+		<div id="parent">
+		<div class="connection-buttons">
+
+			<span class="grey-border" id="die-index-0">
+				<button id="connect0" type="button" class="btn"><b>+</b></button>
+			</span>
+			<span class="grey-border" id="die-index-1">
+				<button id="connect1" type="button" class="btn"><b>+</b></button>
+			</span>
+			<br>
+			<span class="grey-border" id="die-index-2">
+				<button id="connect2" type="button" class="btn"><b>+</b></button>
+			</span>
+			<span class="grey-border" id="die-index-3">
+				<button id="connect3" type="button" class="btn"><b>+</b></button>
+			</span>
+			<br>
+			<span class="grey-border" id="die-index-4">
+				<button id="connect4" type="button" class="btn"><b>+</b></button>
+			</span>
+			<span class="grey-border" id="die-index-5">
+				<button id="connect5" type="button" class="btn"><b>+</b></button>
+			</span>
+			
+		</div>
+		
+		<div class = "vertical"></div>
+		
+		<span id="inspector" class="inspector">
+			<div id="titleText" class="aligned-left title-text">
+				<b>Select a die</b>
+			</div>
+			<hr>
+			<div id="hiddenInspector" class="hidden-inspector hideable"> <!-- Hidden part of inspector when no die is selected-->
+				<div class="aligned-left">
+					<div class="battery-level"><img src="images/BatteryPower.png"></img><span id="batteryLevel">80%</span></div>
+					<div class="checkmark">
+							&ensp;<input id="multiRollCheck" type="checkbox" checked data-toggle="toggle">
+							<span class="multiRollSpan">
+								Multi-roll calculation ⓘ
+								<span class="tooltiptext">Accumulate multiple rolls tossed sequentially in shorter than
+									 					  2-second periods as a single action.</span>
+							</span>
+						<br>
+						&ensp;<input id="resultSendCheck" type="checkbox" unchecked data-toggle="toggle">
+						Mute my dice	
+						<br>
+						&ensp;<input id="whisperCheck" type="checkbox" unchecked data-toggle="toggle">
+						Whisper to GM
+					</div>
+				</div>
+				<div class="die-type-container">
+					<div id='shellTypeText' class="grey-text">
+						Set your shell
+					</div>
+
+					<div class="btn-group mr-2" role="group" aria-label="First group">
+						<img src="images/d6W.png" id="D6Button" class="die-type-btn"></img>
+						<img src="images/d20W.png" id="D20Button" class="die-type-btn"></img>
+						<img src="images/d10W.png" id="D10Button" class="die-type-btn"></img>
+						<img src="images/d10xW.png" id="D10XButton" class="die-type-btn"></img>
+				</div>
+					<br>
+					<div class="btn-group mr-2" role="group" aria-label="Second group">
+						<img src="images/d4W.png" id="D4Button" class="die-type-btn"></img>
+						<img src="images/d8W.png" id="D8Button" class="die-type-btn"></img>
+						<img src="images/d12W.png" id="D12Button" class="die-type-btn"></img>	
+					</div>
+				</div>
+			</div>
+		</span>
+		</div>
+	<span class="disclaimer">* Use extension on one platform at a time.
+		<a href="https://particula-tech.com/godice-discord/">
+			<img id="helpLink" src="images/ClickForHelp.png"></img>
+		</a>
+	</span>
+	</div>
+	<img src="images/logo.png" class="logo-img"></img>
+	
+
+	
+</div>
+	
+</body>
+
+</html>
+

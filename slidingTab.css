@@ -1,0 +1,205 @@
+.sliding-tab * {
+    transition: all ease-in 0.5s;
+    will-change: opacity;
+}
+.sliding-tab:hover * {
+    transition: all ease-in-out 0.5s;
+    transition: filter 0s;
+}
+
+.sliding-tab {
+    will-change: opacity, width, height;
+    position: relative;
+    box-sizing: border-box;
+    height: 108px;
+    width: 62.6px;
+    background-color: white;
+    border: 1px solid #000000;
+    transition: all ease-in 0.5s;
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    top:75%;
+    z-index: 99;
+    vertical-align: middle;
+}
+
+.sliding-tab:hover {
+    height: 128px;
+    width: 140px;
+    transition: all ease-out 0.5s;
+}
+
+.modifier-div {
+    position: absolute;
+    top: 63.87px;
+    bottom: 12.23px;
+    left: 7.06px;
+    width: 44.47px;
+    height: 31.9px;
+
+    background: #D9D9D9;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 19.4px;
+}
+
+.sliding-tab:hover .modifier-div {
+    left: 6.51px;
+    width: 122.97px;
+    height: 31.9px;
+}
+
+.modifier-button {
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in 0.7s;
+    top: 3.03px;
+    width: 25.83px;
+    height: 25.83px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1.82155px rgba(0, 0, 0, 0.5);
+
+    line-height: 0.8;
+    font-weight: 700;
+    font-size: 25.8305px;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #006AAB;
+}
+
+.modifier-button:active {
+    background-color: #e0e0e0;
+}
+
+.button-left {
+    left: 2.8%;
+}
+
+.button-right {
+    right: 2.8%;
+}
+
+.sliding-tab:hover .modifier-button {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#modifier-num {
+    line-height: 30px !important;
+}
+
+.modifier-text {
+    opacity: 0;
+    position: absolute;
+    width: 136px;
+    height: 27px;
+    top: 40.35px;
+    left: 2%;
+    font-weight: 400;
+    font-size: 13.9153px;
+    line-height: 16px;
+    text-align: center;
+    color: #404040;
+}
+
+.sliding-tab:hover .modifier-text {
+    opacity: 1.0;
+}
+
+.template-text {
+    opacity: 0;
+    position: absolute;
+    width: 109.02px;
+    height: 12px;
+    top: 85px;
+    left: 17%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.sliding-tab:hover .template-text {
+    top: 105px;
+    opacity: 1;
+}
+
+.template-checkbox {
+    opacity: 0;
+    position: absolute;
+    right: 83.79%;
+    top: 85px;
+}
+
+.sliding-tab:hover .template-checkbox {
+    opacity: 1;
+    top: 103px;
+}
+  
+.template-text .tooltiptext {
+    z-index: 99;
+    width: 190px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 18px;
+    right: 0%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+  
+.template-text .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 94.5%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+  
+.template-text:hover .tooltiptext {
+    transform:translateZ(100px);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.dark .template-checkbox:not(:checked) {
+    filter: invert(100%) contrast(111%);;
+}
+
+.godice-logo {
+    position: absolute;
+    left: 11.33px;
+    top: 10.35px;
+    height: 20.75px;
+    width: 40.2px;
+}
+
+.sliding-tab:hover .godice-logo {
+    left: 50.7px;
+    height: 20.75px;
+    width: 40.2px;
+}
+
+.grey-vl {
+    border-left: 4px solid #d9d9d9;
+    height: 106px;
+    position: absolute;
+    left: 100%;     
+    margin-left: -3px;
+    top: 0;
+}
+
+.sliding-tab:hover .grey-vl {
+    height: 126px;
+}
+
