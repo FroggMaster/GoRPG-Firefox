@@ -1,0 +1,275 @@
+:root {
+	--goDiceBlack:	#000000;
+	--goDiceRed:	#be1c22;
+	--goDiceGreen:	#428f29;
+	--goDiceBlue:	#126ec8;
+	--goDiceYellow:	#ee9f00;
+	--goDiceOrange:	#db5e16
+}
+
+/* Color filters for black SVGs (Created using https://codepen.io/sosuke/pen/Pjoqqp) */
+.filterRed {
+	filter: invert(17%) sepia(76%) saturate(3870%) hue-rotate(347deg) brightness(84%) contrast(95%);
+}	
+
+.filterGreen {
+	filter: invert(42%) sepia(75%) saturate(410%) hue-rotate(60deg) brightness(95%) contrast(97%);
+}
+
+.filterBlue {
+	filter: invert(25%) sepia(76%) saturate(2557%) hue-rotate(197deg) brightness(94%) contrast(86%);
+}
+
+.filterYellow {
+	filter: invert(62%) sepia(83%) saturate(1912%) hue-rotate(5deg) brightness(98%) contrast(101%);
+}
+
+.filterOrange {
+	filter: invert(39%) sepia(40%) saturate(1054%) hue-rotate(339deg) brightness(107%) contrast(107%);
+}
+
+.disconnted-die-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	user-select: none;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+}
+
+.btn {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 32px;
+	text-align: center;
+	line-height: 0px;
+	border: 1px solid #cdcdcd;
+	color: var(--goDiceBlue);
+}
+
+.btn:hover {
+	filter: drop-shadow(0px 0px 3px var(--goDiceBlue));
+	color: var(--goDiceBlue);
+}
+
+.grey-border {
+	position: relative;
+	margin-left: 10px;
+	margin-top: 15px;
+	display: inline-block;
+	top:0px;
+	background: #f2f2f2;
+	border-radius: 6px;
+	width: 63px;
+	height: 63px;
+}
+
+hr {
+	width: 53.5px;
+	position:relative;
+	bottom: 15px;
+	opacity: 1;
+	border-top: 2px solid #126ec8;
+}
+
+
+.img-die-bg {
+	position: absolute;
+	line-height: 0px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.img-die-bg-transparent {
+	opacity: 0.3;
+}
+
+.img-die-bg:hover {
+	filter: drop-shadow(0px 0px 3px #0e5399);
+}
+
+.connected-die-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	user-select: none;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+}
+
+.div-margin{
+	margin-right: 15px;
+}
+
+.parent-div {
+	position: relative;
+	width: 385px;
+	height: 280px;
+	top: 10px;
+	background: #FFFFFF;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.animate-fade {
+	animation:opac 0.6s
+	}
+@keyframes opac{
+	from{opacity:0} to{opacity:1}
+}
+
+.vertical {
+	top: 2.2%;
+	border-left: 1.5px solid #126ec8;
+	height: 242px;
+	position:absolute;
+	left: 41%;
+}
+
+.connection-buttons {
+	position: relative;
+	bottom: 5px
+}
+
+
+.die-btn-div{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.title-text {
+	color: #126ec8;
+}
+
+.battery-level {
+	color: #797979;
+}
+
+.inspector {
+	position: absolute;
+	left: 175px;
+	top: 8px;
+	text-align: center;
+	width: 285px !important;
+	height: 202px;
+}
+
+.hidden-inspector {
+	position: absolute	;
+	top: 25px;
+}
+
+.aligned-left {
+	text-align:left;
+}
+
+.hideable {
+	display: none;
+}
+
+.checkmark {
+	font-size: 14px;
+}
+
+.multiRollSpan .tooltiptext {
+    z-index: 99;
+    width: 190px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 48px;
+    right: 5%;
+    margin-left: -60px;
+	visibility: hidden;
+	opacity: 0;
+    transition: all 0.4s;
+}
+  
+.multiRollSpan .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 91%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+  
+.multiRollSpan:hover .tooltiptext {
+    transform:translateZ(100px);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+.die-type-container {
+	position: relative;
+	top: 8px;
+	background: #f2f2f2;
+	border-radius: 6px;
+	width: 195px;
+	height: 120px;
+}
+
+.show {
+	display: block;
+}
+
+.grey-text {
+	color: #bbbbbb;
+}
+
+.die-type-btn{
+	cursor: pointer;
+}
+
+.die-type-btn:hover {
+	filter: drop-shadow(0px 0px 2px #0e5399);
+}
+
+.logo-img {
+	position: absolute;
+	right: 3.5%;
+	top: 10px;
+}
+
+.platform-text {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	z-index: 1;
+	user-select: none;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+	color: var(--goDiceBlue);
+
+}
+
+.disclaimer {
+	position: absolute;
+	color: grey;
+	font-size: 12px;
+	left: 50%;
+	top: 91.5%;
+	transform: translate(-50%, 0%);
+	white-space: nowrap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
