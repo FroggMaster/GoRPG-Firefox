@@ -18,6 +18,6 @@
 <h3 align="center">Want to lend a hand?</h3>
 <div align="center">
   𓆏 Pull requests are welcome and encouraged. 𓆏<br>
-  You can open a Pull Request or <kbd><a href="https://github.com/FroggMaster/GoRPG-Firefox/discussions">Start a discussion</a></kbd> with your ideas.<br>
+    You can <kbd><a href="https://github.com/FroggMaster/GoRPG-Firefox/forks">Fork the project</a></kbd> to open a Pull Request or <kbd><a href="https://github.com/FroggMaster/GoRPG-Firefox/discussions">Start a discussion</a></kbd> with your ideas.<br>
   <em>(A GitHub account is required for both)</em> 
 </div>
