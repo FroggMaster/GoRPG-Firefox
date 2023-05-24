@@ -1,11 +1,9 @@
-<div>
-    <a href="https://particula-tech.com/godice-discord/">
-    <img src="https://lh3.googleusercontent.com/_wJTaxvY-ooMGsXVUpsb0xgflmrsHQ5-KTDF_FooMuPoS-WScqDLP8ocjn9T5g6ELXaXvq6RejCXJ94vXVXqchgo=w128-h128-e365-rj-sc0x00ffffff" alt="GoRPG" title="Go to website" width="75">
-</a>
-</div> 
+<div align="left">
+    <img src="https://images2.imgbox.com/c3/05/DIdEzaej_o.png" alt="Sample screenshot" width="100" height="100">
+</div>
+
 
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
-
 
 # GoRPG-Firefox
 - This is a work in progress GoRPG Extension for Firefox
