@@ -1,7 +1,6 @@
 // Passes messages from main content script and specific content script
 // (Must use this script because of chrome extension limitations)
 
-
 const ROLL20_URL = "https://app.roll20.net/editor/"
 const DISCORD_URL = "https://particula-tech.com/godice-discord/discord.html"
 var foundryIDs = []
@@ -23,9 +22,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 			}
 		});
 		
-
 	}
-
  });
 
  // Foundry VTT Tab checking (FOUNDRY ONLY)
@@ -47,7 +44,6 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(activeInfo) {
 
 				// Checking if current tab is active
 				console.log("Found-ry haha get it?")
-				
 				console.log("Injecting")
 				chrome.scripting.executeScript(
 					{	
@@ -71,9 +67,9 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(activeInfo) {
 // On install
 chrome.runtime.onInstalled.addListener(function (object) {
 	
-	let externalUrl = "https://particula-tech.com/godice-discord"		
+	let externalUrl = "https://particula-tech.com/godice-discord/"		
 	chrome.tabs.create({url: externalUrl}, function(tab) {
-		console.log("Landing tab opened")
+		console.log("Landing tab opened", externalUrl)
 	})
 })
 
@@ -96,7 +92,7 @@ chrome.contextMenus.onClicked.addListener((OnClickData) => {
 	console.log(OnClickData)
 	switch(OnClickData.menuItemId) {
 		case "Quick Guide":
-			chrome.tabs.create({url: "https://particula-tech.com/godice-discord"}, function(tab) {})
+			chrome.tabs.create({url: "https://particula-tech.com/godice-discord/"}, function(tab) {})
 			break
 		case "Discord Connection":
 			chrome.tabs.create({url: "https://particula-tech.com/godice-discord/discord.html"}, function(tab) {})
