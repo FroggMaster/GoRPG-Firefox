@@ -1,6 +1,5 @@
 # GoRPG-Firefox
-- GoRPG Extension for Firefox
-- This is the GoRPG Extension that was originally developed for Chrome. I've pulled the source code and am working on converting the extension to a Firefox Compatible format. 
+- This is a work in progress GoRPG Extension for Firefox
+- I've taken the GoRPG Chrome Extension source code from the CRX file and I'm working on converting the extension to a Firefox Compatible XPI. 
+- The extension is currently non-functional due to the Bluetooth connection dialog not being displayed. See: https://github.com/FroggMaster/GoRPG-Firefox/issues/1
 - Pull Requests are welcomed and encouraged!
-- This is a WIP and currently is non-functional due to incompatibilies with the Data Cloning algorith used by the extension; See: https://github.com/FroggMaster/GoRPG-Firefox/issues/1
-
