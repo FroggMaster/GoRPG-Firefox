@@ -9,7 +9,7 @@
 		"webNavigation",
 		"contextMenus"
 	],
-	"host_permissions": ["https://*/game"],
+	"host_permissions": ["https://*/game", "https://app.roll20.net/editor/", "*://particula-tech.com/godice-discord/discord.html"],
 	"version": "0.8",
 	"icons": {
 		"16": "/images/icon16.png",
@@ -20,11 +20,11 @@
 		"scripts": ["background.js"]
 	},
 	"content_scripts": [{
-		"matches": ["*://app.roll20.net/editor/"],
+		"matches": ["https://app.roll20.net/editor/"],
 		"js": ["godice.js", "mainDie.js", "roll20Content.js"],
 		"css": ["slidingTab.css"]
 	},
-	{	"matches": ["*://particula-tech.com/godice-discord/discord.html/*"],
+	{	"matches": ["*://particula-tech.com/godice-discord/discord.html"],
 		"js": ["godice.js", "mainDie.js", "discordContent.js"]
 	}],
 	"web_accessible_resources": [{
