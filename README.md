@@ -8,7 +8,7 @@
 ### Firefox Doesn't Support Bluetooth
 - This was a work in progress GoRPG Extension for Firefox but due to lack of Bluetooth support in Firefox the extension cannot function as intended. 
 - The extension is currently **non-functional** due to the Bluetooth connection dialog not being displayed. See: https://github.com/FroggMaster/GoRPG-Firefox/issues/1
-- Please see the [GoRPG Chrome Extension](https://chrome.google.com/webstore/detail/gorpg/aiocjnejgjkfolnbpjpjapogcocadlol) as an alternative. (Yes unfortunately this means you will have to use a Chromium based browser.) 
+- Please see the [GoRPG Chrome Extension](https://chrome.google.com/webstore/detail/gorpg/aiocjnejgjkfolnbpjpjapogcocadlol) as an alternative. (This means you will have to use a Chromium based browser.) 
 
 <!-- DO NOT MODIFY BELOW -->
 ## Contributing
