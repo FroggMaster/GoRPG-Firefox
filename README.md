@@ -1,16 +1,12 @@
 # GoRPG-Firefox
-
-
 <div align="left">
     <img src="https://images2.imgbox.com/c3/05/DIdEzaej_o.png" alt="Sample screenshot" width="100" height="100">
 </div>
 
-
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
 
-### Work In Progress
-- This is a work in progress GoRPG Extension for Firefox
-- I've taken the [GoRPG Chrome Extension](https://chrome.google.com/webstore/detail/gorpg/aiocjnejgjkfolnbpjpjapogcocadlol) source code from the CRX file and I'm working on converting the extension to a Firefox Compatible XPI. 
+### Firefox Doesn't Support Bluetooth
+- This was a work in progress GoRPG Extension for Firefox but due to lack of Bluetooth support in firefox the extension cannot function as intended. 
 - The extension is currently **non-functional** due to the Bluetooth connection dialog not being displayed. See: https://github.com/FroggMaster/GoRPG-Firefox/issues/1
 
 <!-- DO NOT MODIFY BELOW -->
